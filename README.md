@@ -4,7 +4,7 @@
 
 ### preview terraform actions
 
-    terraform plan
+    terraform plan -var-file terraform-dev.tfvars
 
 ### apply configuration with variables
 
@@ -16,7 +16,7 @@
 
 ### destroy everything fromtf files
 
-    terraform destroy
+    terraform destroy -var-file terraform-dev.tfvars
 
 ### show resources and components from current state
 
@@ -34,4 +34,4 @@
 
     export AWS_ACCESS_KEY_ID="anaccesskey"
     export AWS_SECRET_ACCESS_KEY="asecretkey"
-    export AWS_DEFAULT_REGION="us-west-2"
+    export AWS_DEFAULT_REGION="eu-west-3"
